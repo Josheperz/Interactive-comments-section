@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 body {
-  font-size: 62.5%;
+ 
  font-family: 'Rubik', sans-serif;
+ background-color: var(--Light-gray);
 }
 a {
   text-decoration: none;
@@ -17,29 +18,206 @@ ul {
 
   /* primary */
   
-  --Moderate-blue: hsl(238, 40%, 52%)
-  --Soft-Red: hsl(358, 79%, 66%)
-  --Light-grayish-blue: hsl(239, 57%, 85%)
-  --Pale-red: hsl(357, 100%, 86%)
+  --Moderate-blue: hsl(238, 40%, 52%);
+  --Soft-Red: hsl(358, 79%, 66%);
+  --Light-grayish-blue: hsl(239, 57%, 85%);
+  --Pale-red: hsl(357, 100%, 86%);
   
   /*  Neutral */
   
-  --Dark-blue: hsl(212, 24%, 26%)
-  --Grayish-Blue: hsl(211, 10%, 45%)
-  --Light-gray: hsl(223, 19%, 93%)
-  --Very-light-gray: hsl(228, 33%, 97%)
-  --White: hsl(0, 0%, 100%)
+  --Dark-blue: hsl(212, 24%, 26%);
+  --Grayish-Blue: hsl(211, 10%, 45%);
+  --Light-gray: hsl(223, 19%, 93%);
+  --Very-light-gray: hsl(228, 33%, 97%);
+  --White: hsl(0, 0%, 100%);
 
  /*  Typography */
   
-  --Font-size-paragraph: 1.6rem
+  --Font-size-paragraph: 16px;
+}
+.not-visible {
+  display: none;
+}
+ 
+.fw700 {
+  font-weight: 500;
+  font-size: 15px; 
+}
+.dark-blue {
+  color: var(--Moderate-blue);
+}
+.cstrong {
+  color: var(--Moderate-blue);
+  align-self: center;
+}
+.bgstrong {
+  background: var(--Moderate-blue);
+  color: var(--White);
+}
+.pointer {
+  cursor: pointer;
+}
+.hvrdelete:hover {
+color: var(--Pale-red);
+}
+.hvrreply:hover {
+color: var(--Light-grayish-blue);
+}
+.path-red:hover {
+  fill: var(--Pale-red) !important;
+ }
+.path-blue:hover {
+  fill: var(--Light-grayish-blue) !important;
+  color: var(--Light-grayish-blue);
+}
+.chat {
+  background: var(--White);
+  border-radius: 5px;
+  position: relative;
+  
+  margin-left: 0%;
 }
 
+ main div .avatar {
+  width: 27px;
+ }
+ .sign {
+  display: inline;
+  padding: 0px 8px;
+  padding-bottom: 4px;
+  padding-top: 1px;
+  font-size: 14px;
+  font-weight: 500;
+  vertical-align: text-top;
+  border-radius: 2px;
+  margin-left: 8px;
+  
+ }
+ .name-avatar{
+  margin-left: 10px;
+  color: var(--Dark-blue);
+ }
+.publication-date {
+  color: var(--Grayish-Blue);
+  margin-left: 14px;
+ }
+ .msn-chat {
+  font-size: var(--Font-size-paragraph);
+   color: var(--Grayish-Blue);
+ } 
+ .container-likes-reply {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 18px;
+  bottom: 20px;
+}
+ 
+ .likes-dislike {
+  background-color: var(--Light-gray);
+  display: flex;
+  width: 90px;
+  height: 36px;
+  border-radius: 6px;
+  padding:4px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+ }
+ .plus-minus {
+  align-self: flex-start;
+ }
 
+ .img-icon-chat {
+margin-right: 4px;
 
+ }
+.reply {
+  position: absolute;
+  right: 18px;
+  bottom: 20px;
+}
 
+.border-subchat {
+  width: 1px;
+  height: 559px;
+  position: absolute;
+  border-left: 2px solid var( --Light-grayish-blue);
+  z-index: 2;
+  top: 0;
+  left: -18px;
+ } 
 
-Font
-
-- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
-- Weights: 400, 500, 700
+ .delete {
+ margin-left: 50px;
+ color: var(--Soft-Red);
+ }
+ .text-area {
+  resize: none;
+  font-size: var(--Font-size-paragraph);
+  font-weight: 500;
+  color: var(--Grayish-Blue);
+  padding-top: 12px;
+  padding-left: 20px;
+ }
+ .btn-send {
+  width: 89px;
+  height: 40px;
+ }
+ .btn-send:hover {
+  border: none;
+  background: var(--Light-grayish-blue);
+  color: var(--Light-gray);
+ }
+@media(max-width:380px) {
+ .main-container {
+    width: 375px;
+   }
+ .chat {
+   max-width: 360px;
+  } 
+ .subchat {
+  max-width: 340px;
+  margin-left: 5%;
+   } 
+   .settingp {
+    width: 93%;
+   }
+}
+@media(min-width:382px) {
+  .main-container {
+     width: 570px;
+    }
+  .chat {
+    max-width: 560px;
+   } 
+  .subchat {
+   max-width: 540px;
+   margin-left: 3.5%;
+    } 
+    .settingp {
+     width: 93%;
+    }
+    .border-subchat {
+      height: 439px;
+    }
+ }
+ @media(min-width:590px) {
+  .main-container {
+     width: 700px;
+    }
+  .chat {
+    max-width: 660px;
+   } 
+  .subchat {
+    max-width: 588px;
+    margin-left: 10%;
+    } 
+    .settingp {
+     width: 96%;
+    }
+    .border-subchat {
+      height: 415px;
+    }
+ }
+ 

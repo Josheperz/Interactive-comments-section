@@ -12,14 +12,183 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- bootstrap -->
-  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="./css/custom.css">
 
 </head>
-<body>
+<body class="p-3 mt-2">
+<main>
+<div class="main-container">
 
+  <!--amyrobson-->
+ <div class="chat container p-3 mb-3 ">
+  
+  <div class="card-avatar ">
+    <img class=" avatar" src="./images/avatars/image-amyrobson.png" alt="amyrobson">
+    <span class="name-avatar fw700" >amyrobson</span>
+    <span class="publication-date"> 1 month ago</span>
+  
+  <p class="msn-chat mt-3">Impressive! Though it seems the drag feature could be improved. But averall it looks incredible. You've nailed the design and the responsivenessat various breakpoints works really well</p>
+  </div>
+
+    
+      <div class="likes-dislike col-5 ">
+        
+            <div class="plus-minus pointer"><img src="./images/icon-plus.svg" alt=""></div>
+            <div class="fw700 dark-blue">12</div>
+            <div class="plus-minus pointer"><img src="./images/icon-minus.svg" alt=""></div>
+      
+      </div>
+
+      <div class=" reply fw700 cstrong pointer hvrreply">  <svg class="img-icon-chat" width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path class="path-blue" d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg> Reply</div>
+   
+</div>
+<!-- reply -->
+<div class="chat container p-3 mb-3 not-visible  ">
+  
+  <div class="card-avatar ">
+    
+    <textarea  class="text-area form-control pointer mb-3"  id="reply-amyrobso"  rows="3" cols="30" placeholder="Add a comment..."></textarea>
+
+    <div class="container p-0 d-flex justify-content-between align-items-center ">
+      <img class=" avatar" src="./images/avatars/image-juliusomo.png" alt="amyrobson">
+
+      <button type="button" class="btn btn-send bgstrong"> REPLY</button>
+    </div>
+
+  </div>
+ </div>
+
+<!--maxblagun-->
+<div class="chat container p-3 mb-3">
+  
+  <div class="card-avatar ">
+    <img class=" avatar" src="./images/avatars/image-maxblagun.png" alt="maxblagun">
+    <span class="name-avatar fw700" >maxblagun</span>
+    <span class="publication-date"> 2 weeks ago</span>
  
+  <p class="msn-chat mt-3 settingp">Woah, your project looks awesomel! how long have you been coding for? I'm still new,but think I want to dive into React as well soon. perhaps you can give me an insight on where Icanlearn React? thanks!</p>
+  </div>
+    
+      <div class="likes-dislike ">
+        
+            <div class="plus-minus pointer"><img src="./images/icon-plus.svg" alt=""></div>
+            <div class="fw700 dark-blue">5</div>
+            <div class="plus-minus pointer"><img src="./images/icon-minus.svg" alt=""></div>
+      
+      </div>
+
+      <div class=" reply fw700 cstrong pointer hvrreply">  <svg class="img-icon-chat" width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path class="path-blue" d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg> Reply</div>
+    
+</div>
+<!-- reply -->
+<div class="chat container p-3 mb-3  not-visible ">
+  
+  <div class="card-avatar ">
+    
+    <textarea  class="text-area pointer form-control mb-3"  id="reply-amyrobso"  rows="3" cols="30" placeholder="Add a comment..."></textarea>
+
+    <div class="container p-0 d-flex justify-content-between align-items-center ">
+      <img class=" avatar" src="./images/avatars/image-juliusomo.png" alt="amyrobson">
+
+      <button type="button" class="btn btn-send bgstron pointer"> REPLY</button>
+    </div>
+
+  </div>
+ </div>
+
+<!-- ramsesmiron -->
+<div class="chat subchat container p-3 mb-3   ">
+  <span class="border-subchat "></span>
+  
+  <div class="card-avatar ">
+    <img class=" avatar" src="./images/avatars/image-ramsesmiron.png" alt="ramsesmiron">
+    <span class="name-avatar fw700" >ramsesmiron</span>
+    <span class="publication-date"> 1 week ago</span>
+  
+  <p class="msn-chat mt-3 "><span class="fw700 cstrong">@maxblagun</span> if you're still new. I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tampting to jump ahead but lay a solid foundation first</p>
+  </div>
+    
+      <div class="likes-dislike ">
+        
+            <div class="plus-minus pointer"><img src="./images/icon-plus.svg" alt=""></div>
+            <div class="fw700 dark-blue">4</div>
+            <div class="plus-minus pointer"><img src="./images/icon-minus.svg" alt=""></div>
+      
+      </div>
+
+      <div class=" reply fw700 cstrong pointer hvrreply"> <svg class="img-icon-chat" width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path class="path-blue" d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg>Reply</div>
+    
+</div>
+
+<!-- reply -->
+<div class="chat subchat container p-3 mb-3  not-visible ">
+  
+  <div class="card-avatar ">
+    
+    <textarea  class="text-area pointer form-control mb-3"  id="reply-ramsesmiron"  rows="3" cols="30" placeholder="Add a comment..."></textarea>
+
+    <div class="container p-0 d-flex justify-content-between align-items-center ">
+      <img class=" avatar" src="./images/avatars/image-juliusomo.png" alt="amyrobson">
+
+      <button type="button" class="btn btn-send bgstrong pointer"> REPLY</button>
+    </div>
+
+  </div>
+ </div>
+
+
+<!--juliusomo-->
+<div class="chat subchat container p-3 mb-3   ">
+  
+  <div class="card-avatar ">
+    <img class=" avatar" src="./images/avatars/image-juliusomo.png" alt="ramsesmiron">    
+    <span class="name-avatar fw700" >juliusomo</span>
+    <div class="sign bgstrong">you</div>
+    <span class="publication-date"> 2 days ago</span>
+  
+  <p class="msn-chat mt-3 settingp "><span class="fw700 cstrong">@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+</div>
+    
+      <div class="likes-dislike ">
+        
+            <div class="plus-minus pointer"><img src="./images/icon-plus.svg" alt=""></div>
+            <div class="fw700 dark-blue">2</div>
+            <div class="plus-minus pointer"><img src="./images/icon-minus.svg" alt=""></div>
+      
+      </div>
+      <div class="container-likes-reply">
+      <div class=" delete fw700 cstrong pointer hvrdelete"> 
+        <svg class="img-icon-chat" width="12" height="14" xmlns="http://www.w3.org/2000/svg"><path class="path-red" d="M1.167 12.448c0 .854.7 1.552 1.555 1.552h6.222c.856 0 1.556-.698 1.556-1.552V3.5H1.167v8.948Zm10.5-11.281H8.75L7.773 0h-3.88l-.976 1.167H0v1.166h11.667V1.167Z" fill="#ED6368"/></svg>
+        Delete</div>
+
+      <div class=" edit fw700 cstrong hvrreply"> <svg class="img-icon-chat" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path class="path-blue" d="M13.479 2.872 11.08.474a1.75 1.75 0 0 0-2.327-.06L.879 8.287a1.75 1.75 0 0 0-.5 1.06l-.375 3.648a.875.875 0 0 0 .875.954h.078l3.65-.333c.399-.04.773-.216 1.058-.499l7.875-7.875a1.68 1.68 0 0 0-.061-2.371Zm-2.975 2.923L8.159 3.449 9.865 1.7l2.389 2.39-1.75 1.706Z" fill="#5357B6"/></svg> Edit</div>
+
+
+    </div>
+</div>
+
+
+<!--new message-->
+<div class="chat container p-3 mb-3   ">
+  
+  <div class="card-avatar ">
+    
+    <textarea  class="text-area pointer form-control mb-3"  id="reply-you"  rows="3" cols="30" placeholder="Add a comment..."></textarea>
+
+    <div class="container p-0 d-flex justify-content-between align-items-center ">
+      <img class=" avatar" src="./images/avatars/image-juliusomo.png" alt="amyrobson">
+
+      <button type="button" class="btn btn-send bgstrong"> SEND</button>
+    </div>
+
+  </div>
+ </div>
+</div>
+</main>
+
+
   
   <div >
     Challenge by <a  href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -27,5 +196,8 @@
   </div>
   <script src="./bootstrap/js/bootstrap.js"></script>
   <script src="./script.js"></script>
+
+
+
 </body>
 </html>

@@ -31,7 +31,12 @@ const updateYouJuliusomo = document.querySelector('#update-you-reply');
       /* delete comment */
 const deltCommentBackground = document.querySelector('.delete-comment-background');
 const cancelBtn = document.querySelector('.btn-cancel');
-const deleteBtn = document.querySelector('.btn-delete');     
+const deleteBtn = document.querySelector('.btn-delete');  
+
+/* /* likes-dislike-Amy */
+const valueAmy = document.querySelector('#value-amy');
+const plusAmy = document.querySelector('#plus-amy');
+const minusAmy = document.querySelector('#minus-amy');
 
 
 /* amyrobson */
@@ -159,4 +164,21 @@ function yesDelete(){
   replyYou.classList.add('not-visible');
 }
 
+/* /* likes-dislike_amy */
 
+plusAmy.addEventListener('click', plusStar);
+const amyStars = 12;
+
+function plusStar() {
+  let starsPlus = amyStars + 1;
+  valueAmy.innerText= starsPlus
+  console.log(starsPlus);
+};
+
+minusAmy.addEventListener('click', minusStar);
+
+function minusStar() {
+  let starsMinus = amyStars - 1;
+  valueAmy.innerText= starsMinus;
+ 
+}
